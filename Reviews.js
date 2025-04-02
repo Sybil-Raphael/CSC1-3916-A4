@@ -1,18 +1,15 @@
-const mongoose = require('mongoose');
-require('dotenv').config(); // Load environment variables
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
-// Connect to MongoDB
-mongoose.connect(process.env.DB, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log("MongoDB connected"))
-  .catch(err => console.error("MongoDB connection error:", err));
+mongoose.connect(process.env.DB);
 
-// Define the Review Schema
-const reviewSchema = new mongoose.Schema({
+// Movie schema
+var ReviewSchema = new Schema({
   movieId: { type: mongoose.Schema.Types.ObjectId, ref: 'Movie' },
   username: String,
   review: String,
   rating: { type: Number, min: 0, max: 5 }
 });
 
-// Create Review Model
-const Review = mongoose.model('Review', reviewSchema);
+// return the model
+module.exports = mongoose.model('Review', ReviewSchema);
