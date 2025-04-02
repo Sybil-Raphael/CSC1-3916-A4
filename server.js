@@ -2,7 +2,7 @@
 CSC3916 HW4
 File: Server.js
 Description: Web API scaffolding for Movie API
- */
+*/
 
 var express = require('express');
 var bodyParser = require('body-parser');
