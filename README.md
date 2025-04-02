@@ -10,7 +10,7 @@ Using the information already entered to MongoDB for the previous assignment, th
 
 Prerequisites: Ensure you have the following installed:
 - Node.js (v16+ recommended)
-- MongoDB (local or cloud instance like MongoDB Atlas)
+- MongoDB (like MongoDB Atlas)
 - Postman (for testing API requests)
 
 Steps to Install & Run:  
@@ -18,9 +18,6 @@ Steps to Install & Run:
     - git clone https://github.com/Sybil-Raphael/CSC3916_Assignment4
 1. Install Dependencies:
     - npm install
-1. Set Up Environment Variables - Create a .env file at the project root and add the following:
-    - DB=mongodb+srv://sybilraphael:dbpassword@movies.rf7pq.mongodb.net/
-    - SECRET_KEY=mysecretkey
 1. Run the Server
     - npm start
 
