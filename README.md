@@ -13,7 +13,7 @@ Prerequisites: Ensure you have the following installed:
 - MongoDB (like MongoDB Atlas)
 - Postman (for testing API requests)
 
-Steps to Install & Run:  
+#### Steps to Install & Run:  
 1. Clone the Repository:
     - git clone https://github.com/Sybil-Raphael/CSC3916_Assignment4
 1. Install Dependencies:
